@@ -18,10 +18,10 @@ class MyComponent extends React.Component {
             //  this.response = response.data.title
                 // console.log(response.data.director);
                 // console.log(response.data.title);
-				// console.log(response);
-				console.log(response.request.response);
+		console.log(response.data);
+		// console.log(response.request.response);
 				
-                this.setState({items: response.request})
+                this.setState({items: response.data})
             })
             .catch(function (error) {
                 // handle error
